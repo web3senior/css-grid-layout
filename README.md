@@ -7,7 +7,7 @@ sass style.scss:style.css -w
 ```
 
 ## Demo
-![output] (https://raw.githubusercontent.com/web3senior/css-grid-layout/main/demo.png)
+![demo] (https://raw.githubusercontent.com/web3senior/css-grid-layout/main/demo.png)
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
