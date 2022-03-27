@@ -1,11 +1,11 @@
-.container {
-  position: relative;
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 20px;
-  box-sizing: border-box;
-}
-
+/*---------------------------------
+- Variables
+---------------------------------*/
+/* Extra small devices */
+/* Small devices (landscape phones, 576px and up) */
+/* Medium devices (tablets, 768px and up) */
+/* Large devices (desktops, 992px and up) */
+/* Extra large devices (large desktops, 1200px and up) */
 .grid {
   display: grid;
   grid-template-rows: auto;
@@ -20,14 +20,9 @@
   grid-template-columns: repeat(12, 1fr);
 }
 
-/*
-* Media Queries
-*/
-/* Extra small devices */
-/* Small devices (landscape phones, 576px and up) */
-/* Medium devices (tablets, 768px and up) */
-/* Large devices (desktops, 992px and up) */
-/* Extra large devices (large desktops, 1200px and up) */
+/*---------------------------------
+- Media Queries
+---------------------------------*/
 /* Larger than mobile */
 @media (min-width: 0) {
   .grid .xs-col-1-1 {

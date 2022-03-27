@@ -1,10 +1,11 @@
-.container {
-  position: relative;
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 20px;
-  box-sizing: border-box;
-}
+/*---------------------------------
+- Variables
+---------------------------------*/
+$breakpoint-xs: 480px; /* Extra small devices */
+$breakpoint-sm: 576px; /* Small devices (landscape phones, 576px and up) */
+$breakpoint-md: 768px; /* Medium devices (tablets, 768px and up) */
+$breakpoint-lg: 992px; /* Large devices (desktops, 992px and up) */
+$breakpoint-xl: 1200px; /* Extra large devices (large desktops, 1200px and up) */
 
 .grid {
   &[data-grid="fit"] {
@@ -22,15 +23,9 @@
   counter-reset: grid-items;
 }
 
-/*
-* Media Queries
-*/
-$breakpoint-xs: 480px; /* Extra small devices */
-$breakpoint-sm: 576px; /* Small devices (landscape phones, 576px and up) */
-$breakpoint-md: 768px; /* Medium devices (tablets, 768px and up) */
-$breakpoint-lg: 992px; /* Large devices (desktops, 992px and up) */
-$breakpoint-xl: 1200px; /* Extra large devices (large desktops, 1200px and up) */
-
+/*---------------------------------
+- Media Queries
+---------------------------------*/
 /* Larger than mobile */
 @media (min-width: 0) {
   .grid {
