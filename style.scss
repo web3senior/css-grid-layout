@@ -1,0 +1,112 @@
+.container {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.grid {
+  &[data-grid="fit"] {
+    grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+  }
+
+  &[data-grid="manually"] {
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  display: grid;
+  grid-template-rows: auto;
+  border: 1px solid #fea8138e;
+  grid-gap: 0.5rem;
+  counter-reset: grid-items;
+}
+
+/*
+* Media Queries
+*/
+$breakpoint-xs: 480px; /* Extra small devices */
+$breakpoint-sm: 576px; /* Small devices (landscape phones, 576px and up) */
+$breakpoint-md: 768px; /* Medium devices (tablets, 768px and up) */
+$breakpoint-lg: 992px; /* Large devices (desktops, 992px and up) */
+$breakpoint-xl: 1200px; /* Extra large devices (large desktops, 1200px and up) */
+
+/* Larger than mobile */
+@media (min-width: 0) {
+  .grid {
+    @for $a from 1 through 13 {
+      @for $b from 1 through 13 {
+        .xs-col-#{$a}-#{$b} {
+          grid-column-start: #{$a};
+          grid-column-end: #{$b};
+          grid-row-start: 1;
+          grid-row-end: 2;
+        }
+      }
+    }
+  }
+}
+
+/* Larger than phablet (also point when grid becomes active) */
+@media (min-width: $breakpoint-sm) {
+  .grid {
+    @for $a from 1 through 13 {
+      @for $b from 1 through 13 {
+        .sm-col-#{$a}-#{$b} {
+          grid-column-start: #{$a};
+          grid-column-end: #{$b};
+          grid-row-start: 1;
+          grid-row-end: 2;
+        }
+      }
+    }
+  }
+}
+
+/* Larger than tablet */
+@media (min-width: $breakpoint-md) {
+  .grid {
+    @for $a from 1 through 13 {
+      @for $b from 1 through 13 {
+        .md-col-#{$a}-#{$b} {
+          grid-column-start: #{$a};
+          grid-column-end: #{$b};
+          grid-row-start: 1;
+          grid-row-end: 2;
+        }
+      }
+    }
+  }
+}
+
+/* Larger than desktop */
+@media (min-width: $breakpoint-lg) {
+  .grid {
+    @for $a from 1 through 13 {
+      @for $b from 1 through 13 {
+        .lg-col-#{$a}-#{$b} {
+          grid-column-start: #{$a};
+          grid-column-end: #{$b};
+          grid-row-start: 1;
+          grid-row-end: 2;
+        }
+      }
+    }
+  }
+}
+
+/* Larger than Desktop HD */
+@media (min-width: $breakpoint-xl) {
+  .grid {
+    @for $a from 1 through 13 {
+      @for $b from 1 through 13 {
+        .xl-col-#{$a}-#{$b} {
+          grid-column-start: #{$a};
+          grid-column-end: #{$b};
+          grid-row-start: 1;
+          grid-row-end: 2;
+        }
+      }
+    }
+  }
+}
