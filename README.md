@@ -3,7 +3,7 @@ HTML-based css layout.
 
 ## How to compile
 ```bash
-sass style.scss:style.css -w
+npm run sass:wath
 ```
 
 ## Demo
