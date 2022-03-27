@@ -1,6 +1,9 @@
-/*---------------------------------
-- Variables
----------------------------------*/
+/*********************************
+* Import
+**********************************/
+/*********************************
+* Variable
+**********************************/
 /* Extra small devices */
 /* Small devices (landscape phones, 576px and up) */
 /* Medium devices (tablets, 768px and up) */
@@ -9,9 +12,7 @@
 .grid {
   display: grid;
   grid-template-rows: auto;
-  border: 1px solid #fea8138e;
   grid-gap: 0.5rem;
-  counter-reset: grid-items;
 }
 .grid[data-grid=fit] {
   grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
@@ -5109,4 +5110,4 @@
   }
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=main.css.map */

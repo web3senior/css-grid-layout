@@ -1,6 +1,6 @@
-/*---------------------------------
-- Variables
----------------------------------*/
+/*********************************
+* Variable
+**********************************/
 $breakpoint-xs: 480px; /* Extra small devices */
 $breakpoint-sm: 576px; /* Small devices (landscape phones, 576px and up) */
 $breakpoint-md: 768px; /* Medium devices (tablets, 768px and up) */
@@ -18,9 +18,7 @@ $breakpoint-xl: 1200px; /* Extra large devices (large desktops, 1200px and up) *
 
   display: grid;
   grid-template-rows: auto;
-  border: 1px solid #fea8138e;
   grid-gap: 0.5rem;
-  counter-reset: grid-items;
 }
 
 /*---------------------------------

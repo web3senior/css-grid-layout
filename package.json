@@ -1,0 +1,34 @@
+{
+  "name": "yungul",
+  "version": "1.0.0",
+  "description": "Modular, fast, light-weight css framework",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass:watch": "sass scss/main.scss:css/main.css -w",
+    "sass:mini": "sass scss/main.scss:dist/main.min.css --style compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/web3senior/css-grid-layout.git"
+  },
+  "keywords": [
+    "sass",
+    "css",
+    "framework",
+    "mini",
+    "css",
+    "layout",
+    "light-weight",
+    "css"
+  ],
+  "author": "Amir Rahimi <web3senior@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/web3senior/css-grid-layout/issues"
+  },
+  "homepage": "https://github.com/web3senior/css-grid-layout#readme"
+}
