@@ -4,7 +4,7 @@
 // Data Members
 $breakpoints: (
   // Extra small devices
-  xsmall: ('xs-col-', 480px),
+  xsmall: ('xs-col-', 0),
   // Small devices (landscape phones, 576px and up)
   small: ('sm-col-',576px),
   // Medium devices (tablets, 768px and up)
@@ -28,7 +28,7 @@ $breakpoints: (
   }
 
   &.grid--fill {
-    grid-template-columns: repeat(auto-fill, minmax(0, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(480, 1fr));
   }
 
   &.grid--gap-025 {
@@ -58,7 +58,6 @@ $breakpoints: (
         @for $b from 1 through 13 {
           .#{list.nth(list.nth(list.nth($breakpoints,$i),2),1)}#{$a}-#{$b} {
             grid-column: #{$a} / #{$b};
-            grid-row: 1;
           }
         }
       }
