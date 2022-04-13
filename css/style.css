@@ -10,6 +10,18 @@
 .grid.grid--fill {
   grid-template-columns: repeat(auto-fill, minmax(0, 1fr));
 }
+.grid.grid--gap-025 {
+  grid-gap: 0.25rem;
+}
+.grid.grid--gap-050 {
+  grid-gap: 0.5rem;
+}
+.grid.grid--gap-075 {
+  grid-gap: 0.75rem;
+}
+.grid.grid--gap-1 {
+  grid-gap: 1rem;
+}
 
 @media (min-width: 480px) {
   .grid .xs-col-1-1 {

@@ -30,6 +30,22 @@ $breakpoints: (
   &.grid--fill {
     grid-template-columns: repeat(auto-fill, minmax(0, 1fr));
   }
+
+  &.grid--gap-025 {
+    grid-gap: 0.25rem;
+  }
+
+  &.grid--gap-050 {
+    grid-gap: 0.50rem;
+  }
+
+  &.grid--gap-075 {
+    grid-gap: 0.75rem;
+  }
+
+  &.grid--gap-1 {
+    grid-gap: 1rem;
+  }
 }
 
 @debug list.nth(list.nth(list.nth($breakpoints, 1), 2), 2);
