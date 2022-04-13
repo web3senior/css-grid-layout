@@ -8,8 +8,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass:watch": "sass scss/main.scss:css/main.css -w",
-    "sass:production": "sass scss/main.scss:dist/main.min.css --style compressed"
+    "sass:watch": "sass scss:css -w",
+    "sass:production": "sass scss:css --style compressed"
   },
   "repository": {
     "type": "git",
